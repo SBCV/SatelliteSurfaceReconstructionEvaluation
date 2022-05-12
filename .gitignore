@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .idea/
 ssr_eval/configs/eval.cfg
+ssr_eval/configs/eval.toml
