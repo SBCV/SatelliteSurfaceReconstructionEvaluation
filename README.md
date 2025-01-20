@@ -19,6 +19,9 @@ Evaluation scripts of [3D Surface Reconstruction From Multi-Date Satellite Image
             - Select ```SatelliteSurfaceReconstructionEvaluation```
             - Make sure that ```SatelliteSurfaceReconstructionEvaluation``` is selected
 
+## Prepare the Ground Truth Data
+Obtain the data from [here](https://github.com/SBCV/VisSatDataset/tree/main).
+
 ## Run the Evaluation Pipeline
 - Run ```ssr_eval/run_ssr_evaluation.py```
 - The first time ```ssr_eval/run_ssr_evaluation.py``` is executed, it will create a configuration at ```ssr_eval/configs/eval.cfg``` using the template located at ```ssr_eval/configs/eval_template.cfg```
