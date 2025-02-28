@@ -203,7 +203,8 @@ def align(
 # source_tif is your reconstructed GeoTIFF file
 # target_tif is the ground-truth GeoTIFF file
 def evaluate(source_tif, target_tif, out_dir, max_processes):
-    print("evaluating {}...".format(source_tif))
+    print(f"evaluating {source_tif}...")
+    print(f"(traget_tif: {target_tif})")
 
     if not os.path.exists(out_dir):
         os.mkdir(out_dir)
