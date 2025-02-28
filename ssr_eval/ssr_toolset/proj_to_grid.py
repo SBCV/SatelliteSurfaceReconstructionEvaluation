@@ -15,8 +15,8 @@ def proj_to_grid(
     ysize,
     fill_small_holes,
 ):
-    row = np.floor((yoff - points[:, 1]) / xresolution).astype(dtype=np.int)
-    col = np.floor((points[:, 0] - xoff) / yresolution).astype(dtype=np.int)
+    row = np.floor((yoff - points[:, 1]) / xresolution).astype(dtype=np.int64)
+    col = np.floor((points[:, 0] - xoff) / yresolution).astype(dtype=np.int64)
     points_group_idx = row * xsize + col
     points_val = points[:, 2]
 
@@ -26,7 +26,7 @@ def proj_to_grid(
     points_val = points_val[mask]
 
     # create a place holder for all pixels in the dsm
-    group_idx = np.arange(xsize * ysize).astype(dtype=np.int)
+    group_idx = np.arange(xsize * ysize).astype(dtype=np.int64)
     group_val = np.empty(xsize * ysize)
     group_val.fill(np.nan)
 
