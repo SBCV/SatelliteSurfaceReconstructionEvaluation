@@ -118,7 +118,7 @@ if __name__ == "__main__":
         if fill_small_holes:
             specific_suffix += "_hf"
         specific_odp = os.path.join(odp, odn + specific_suffix)
-        assert_msg = f"Directory {specific_odp} already exists"
+        assert_msg = f"Directory already exists: {specific_odp}"
         assert not os.path.isdir(specific_odp), assert_msg
         os.mkdir(specific_odp)
 
